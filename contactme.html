@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c8247b330c.js" crossorigin="anonymous"></script>
+
     </head>
 
     <body>
@@ -14,7 +16,7 @@
 
     <style>
         body {
-            background-color: rgb(217, 230, 191);
+            background-color: rgb(211, 182, 135);
             color:  rgb(57, 38, 22);
             text-decoration: double;
             font-family: 'Open Sans', sans-serif;
@@ -29,8 +31,8 @@
   }
 
   input[type] {
-    border: 2px solid rgb(158, 158, 231);
-    background-color: #80dbba;
+    border: 2px solid rgb(131, 76, 28);
+    background-color: #c99c7f;
     color: white;
     width: 50%;
     box-sizing: border-box;
@@ -39,10 +41,32 @@
 }
 
 input:focus {
-    padding: 100px;
-  background-color: lightblue;
   border: 3px solid #555;
   background-image: url("https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2015/11/10/0/CI_Costa-Farms-Leucanthemum-Darling-DSC_4587.jpg.rend.hgtvcom.1280.853.suffix/1447169937063.jpeg");
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.social-icon {
+    vertical-align: auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.social-icon>.fa {
+    width: 25px;
+    height: 25px;
+    background-color: #cd7f4b;
+    padding-top: 2px;
+    border-radius: 3px;
+}
+
+.social-icon>.fa:hover {
+    background-color: #c7c6c9;
 }
     </style>
 
@@ -68,4 +92,12 @@ Or <a href="mailto:ahuseynova11989@ada.edu.az">email me!</a></p>
         <input type="submit" value="send" />
     </form>
     </body> 
+
+    <div class="social-links">
+        <a href="https://twitter.com/?lang=ru" target="_blank"><span class="social-icon"><i class="fa fa-brands fa-twitter"></i></span></a>
+        <a href="https://www.facebook.com/" target="_blank"><span class="social-icon"><i class="fa fa-brands fa-facebook"></i></span></a>
+        <a href="https://www.instagram.com/"target="_blank"><span class="social-icon"><i class="fa fa-brands fa-instagram"></i></span></a>
+        <a href="https://github.com/AliyaHuseynova" target="_blank"><span class="social-icon"><i class="fa fa-brands fa-github"></i></span></a>
+    </div>
+
     </html>
