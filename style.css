@@ -1,4 +1,91 @@
 body{
     display: flex;
-    min-height: ;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  background-image: url(lightning-bolts.jpg);
+   /*   background-image: url(f233e5b054960f2752366de10273693b.png) */
+    /* background-image: url(AP_lightning_081620_01.jpg); */
+    
 }
+
+
+.card {
+    width: 50vh;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    margin: 20px; 
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+.card:hover{
+    opacity: 90%;
+}
+
+.card h1{
+    font-size: 40;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px; 
+    color: rgb(27, 27, 27);
+    display: flex;  
+    border: 3px gray;
+    background-color: rgba(203, 198, 180, 0.507);
+}
+
+.input :where(button, input){
+    color: white;
+    text-decoration-style: solid;
+    /* text-decoration: solid; */
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(214, 208, 208, 0.3);
+    border-radius: 30px;
+    text-align: center;
+    border: 20px;
+    border: grey;
+}
+
+.input {
+    display: none;
+}
+
+.input input:is(:focus, :valid){
+    border: 2px solid white;
+}
+.text-input.error{
+    border-radius: 30px;
+    background-color: rgba(165, 42, 42, 0.308);
+    color: rgb(207, 46, 46);
+}
+
+.text-input.pending{
+    border-radius: 30px;
+    background-color: rgba(227, 220, 18, 0.308);
+    color: rgb(232, 180, 36);
+}
+
+/* .input button{
+    /* cursor: pointer; 
+*/
+
+.input button:hover{
+    background-color: rgb(138, 119, 61);
+}
+
+
+.weather{
+    margin: 20px;
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.weather img{
+    max-width: 150px;
+}
+
