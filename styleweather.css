@@ -4,11 +4,7 @@ body{
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-  /* background-image: url(lightning-bolts.jpg); */
-  background-image: url();
-   /*   background-image: url(f233e5b054960f2752366de10273693b.png) */
-    /* background-image: url(AP_lightning_081620_01.jpg); */
-    
+    background-image: url("https://www.wkbn.com/wp-content/uploads/sites/48/2021/01/lightning-thunder-thunderstorm-rain-severe-weather-spring-summer-fall-weather-generic-3.jpg?w=1280");    
 }
 
 
@@ -91,9 +87,9 @@ body{
     max-width: 150px;
 }
 
-.weather .temperature{
+/* .weather .temperature{
     display: flex;
     font-size: 80px;
 
 
-}
+} */
