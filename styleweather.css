@@ -11,7 +11,7 @@ body{
 
 
 .card {
-    width: 50vh;
+    width: 90vh;
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.5);
     font-family: 'Raleway', sans-serif;
@@ -89,9 +89,39 @@ body{
     max-width: 150px;
 }
 
+  #flexbox {
+    /* display: flex; */
+    flex-wrap: wrap;
+    width: 130px;
+    /* gap: 30px 5px; */
+  }
+
+  td{
+    width: 50px;
+    table-layout: fixed;
+  }
+
+  #grid {
+    display: grid;
+    height: 200px;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 20px 5px;
+  }
+  
 /* .weather .temperature{
+     display: flex; 
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.weather .number{
+     display: flex; 
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.weather .degree{
     display: flex;
-    font-size: 80px;
-
-
+    font-size: 20px;
+    font-weight: 500;
 } */
