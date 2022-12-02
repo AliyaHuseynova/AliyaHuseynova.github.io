@@ -4,7 +4,8 @@ body{
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-  background-image: url(lightning-bolts.jpg);
+  /* background-image: url(lightning-bolts.jpg); */
+  background-image: url();
    /*   background-image: url(f233e5b054960f2752366de10273693b.png) */
     /* background-image: url(AP_lightning_081620_01.jpg); */
     
@@ -88,4 +89,11 @@ body{
 
 .weather img{
     max-width: 150px;
+}
+
+.weather .temperature{
+    display: flex;
+    font-size: 80px;
+
+
 }
