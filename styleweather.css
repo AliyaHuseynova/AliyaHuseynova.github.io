@@ -5,9 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     background-image: url("https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/assets/2019/05/01-05-2019-FromField.jpg/image1170x530cropped.jpg");
-    /* background-image: url("https://nppa.org/sites/default/files/kp0816_Lightning_lede.jpg"); */
-    /* background-image: url("https://www.wkbn.com/wp-content/uploads/sites/48/2021/01/lightning-thunder-thunderstorm-rain-severe-weather-spring-summer-fall-weather-generic-3.jpg?w=1280");     */
-}
+   }
 
 
 .card {
@@ -37,7 +35,7 @@ body{
     background-color: rgba(203, 198, 180, 0.507);
 }
 
-.input :where(button, input){
+.inputP :where(button, input){
     color: white;
     text-decoration-style: solid;
     /* text-decoration: solid; */
@@ -49,11 +47,11 @@ body{
     border: grey;
 }
 
-.input {
+/* .input {
     display: none;
-}
+} */
 
-.input input:is(:focus, :valid){
+.inputP input:is(:focus, :valid){
     border: 2px solid white;
 }
 .text-input.error{
@@ -72,7 +70,7 @@ body{
     /* cursor: pointer; 
 */
 
-.input button:hover{
+.inputP button:hover{
     background-color: rgb(138, 119, 61);
 }
 
