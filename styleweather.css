@@ -96,10 +96,11 @@ body{
     /* gap: 30px 5px; */
   }
 
-  td{
+  table{
     width: 50px;
-    table-layout: fixed;
+    table-layout: auto;
   }
+
 
   #grid {
     display: grid;
