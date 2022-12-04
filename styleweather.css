@@ -24,8 +24,8 @@ body{
     opacity: 90%;
 }
 
-.card h1{
-    font-size: 40;
+.card header{
+    font-size: 50px;
     justify-content: center;
     text-align: center;
     border-radius: 30px; 
@@ -33,6 +33,29 @@ body{
     display: flex;  
     border: 3px gray;
     background-color: rgba(203, 198, 180, 0.507);
+}
+
+/* .card.active header i{
+    font-size: 30px;
+    margin-left: 10px;
+} */
+
+
+.card .weather{
+    display: none;
+} 
+
+
+.card.active .weather{
+    display: flex;
+}
+
+.card.active .inputP{
+    display: none;
+}
+
+.inputP .text-input{
+    display: none;
 }
 
 .inputP :where(button, input){
@@ -47,28 +70,26 @@ body{
     border: grey;
 }
 
-/* .input {
-    display: none;
-} */
-
 .inputP input:is(:focus, :valid){
     border: 2px solid white;
 }
 .text-input.error{
+    display: block;
     border-radius: 30px;
     background-color: rgba(165, 42, 42, 0.308);
     color: rgb(207, 46, 46);
 }
 
 .text-input.pending{
+    display: block;
     border-radius: 30px;
     background-color: rgba(227, 220, 18, 0.308);
     color: rgb(232, 180, 36);
 }
 
-/* .input button{
-    /* cursor: pointer; 
-*/
+.text-input.ready{
+    display: none;
+}
 
 .inputP button:hover{
     background-color: rgb(138, 119, 61);
@@ -77,10 +98,9 @@ body{
 
 .weather{
     margin: 20px;
-    /* display: flex; */
+    /* display: none; */
     justify-content: center;
     flex-direction: column;
-    display: flex;
 }
 
 .weather img{
