@@ -50,19 +50,27 @@ function weatherInfo(information){
         const city = information.name;
         const country = information.sys.country;
         const {description, id, main} = information.weather[0];
-        const {feels_like, humidity, temp, temp_max, temp_min} = information.main;
+        const {feels_like, humidity, pressure, temp, temp_max, temp_min} = information.main;
+        const {deg, speed} = information.wind;
 
 //div span
          card.querySelector(".temp").innerText = temp;
          card.querySelector(".max-temp").innerText = temp_max;
          card.querySelector(".min-temp").innerText = temp_min;
          //i dont know why but API shows as if temp_max = temp_min
-         
          card.querySelector(".feels-like").innerText = feels_like;
 
 
+         card.querySelector(".description .descr").innerText = main;
          card.querySelector(".description .condition").innerText = description;
          card.querySelector(".location span").innerText = `${city}, ${country}` ;
+         card.querySelector(".humidity").innerText = humidity;
+         card.querySelector(".pressure").innerText = pressure;
+
+         card.querySelector(".speed").innerText = speed;
+         card.querySelector(".wind-degree").innerText = deg;
+
+
         // // card.querySelector(".temperature .number").innerText = temp;
         // // card.querySelector(".temperature .number").innerText = temp;
 
